@@ -1,0 +1,55 @@
+# OS Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+logs/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Dependencies
+node_modules/
+vendor/
+
+# Build outputs
+dist/
+build/
+*.pyc
+__pycache__/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Sensitive data
+**/sensitive/
+**/private/
+**/*_private.*
+**/*_secret.*
+
+# Large files
+*.zip
+*.tar.gz
+*.rar
+
+# Credentials (just in case)
+**/credentials.json
+**/config/secrets.yaml
+**/keys/
