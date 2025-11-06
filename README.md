@@ -315,3 +315,31 @@ These skills embody three core principles:
 **Last Updated**: November 4, 2025  
 **Maintained By**: Organized AI Team  
 **Version**: 2.0.0 (Now with 3 production-ready skills!)
+
+---
+
+### 🎯 PostHog Wizard
+**AI-First CLI patterns from PostHog Wizard**
+
+Learn and apply patterns from PostHog Wizard for building AI-first developer tools with deterministic LLM prompting, MCP management, and agent rules generation.
+
+**Key Features:**
+- 🎯 Deterministic Prompting patterns (force structured JSON)
+- 🔧 LLM Query Wrappers (centralized API calls)
+- 📋 Agent Rules Generation (create `.cursor/rules` files)
+- 🔌 MCP Server Management (programmatic installation)
+- 📊 CLI Analytics integration
+- 🏗️ AI-First Architecture patterns
+
+**Activation:**
+```
+"PostHog Wizard patterns"
+"CLI wizard architecture"
+"Deterministic prompting"
+"MCP management"
+```
+
+**Tools Required:** None (knowledge skill)
+
+[**→ View PostHog Wizard Documentation**](./skills/posthog-wizard/)
+
