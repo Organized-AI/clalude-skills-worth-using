@@ -1,78 +1,107 @@
 ---
 name: startup-validator
-description: Comprehensive startup validation for M&A due diligence with automated scoring, strategic fit analysis, and board-ready recommendations
+description: Comprehensive startup validation for M&A due diligence. Scores companies against acquisition rubrics, identifies red flags, assesses strategic fit, and generates board-ready recommendations - no questions asked.
 license: MIT
-allowed-tools: [bash, file_create, str_replace, view]
+allowed-tools: [view, file_create]
+metadata:
+  version: 1.0.0
+  enhanced_for: M&A due diligence
+  organization: Organized-AI
+  source: Enhanced from ailabs-393/ai-labs-claude-skills
+  updated: 2025-11-19
 ---
 
 # Startup Validator
+
+## Overview
 
 Comprehensive startup validation system for M&A due diligence. Automatically scores acquisition targets against industry rubrics, identifies strategic fit, assesses risks, and generates executive recommendations.
 
 ## Core Capability
 
-**"No Questions Asked" Validation** - Provide company brief → Get complete validation report automatically.
+**"No Questions Asked" Validation**
+- Provide company brief → Get complete validation report
+- Automatic scoring across 4 dimensions
+- Strategic fit analysis
+- Risk assessment matrix
+- Board-ready recommendations
 
-## Activation
+## Activation Phrases
 
 ```
 "Validate this startup for acquisition: [company brief]"
 "Score [company] against M&A rubrics"
-"M&A validation for [company name]"
+"Generate due diligence checklist for [company]"
+"Assess strategic fit with [target company]"
 ```
 
 ## Validation Framework
 
-### 4-Dimension Scoring (100 points total)
+### 4-Dimension Scoring System
 
-1. **Market Opportunity** (25 pts): TAM, growth rate, positioning
-2. **Financial Health** (25 pts): Revenue, margins, unit economics
-3. **Strategic Fit** (25 pts): Synergies, customer overlap, tech compatibility
-4. **Team & Execution** (25 pts): Founders, retention, track record
+#### 1. Market Opportunity (25 points)
+- TAM analysis (>$1B preferred)
+- Market growth rate (>15% YoY)
+- Competitive positioning
+- Timing and market readiness
+
+#### 2. Financial Health (25 points)
+- Revenue metrics (ARR, growth rate)
+- Profitability (gross margin >60%)
+- Unit economics (LTV/CAC >3x)
+- Path to profitability
+
+#### 3. Strategic Fit (25 points)
+- Synergy potential (>$5M)
+- Customer overlap
+- Technology compatibility
+- Cultural alignment
+
+#### 4. Team & Execution (25 points)
+- Founder experience
+- Key hires and retention (>90%)
+- Execution track record
+- Team completeness
 
 ### Scoring Interpretation
-- 90-100: ⭐⭐⭐⭐⭐ Excellent acquisition target
-- 75-89: ⭐⭐⭐⭐ Good target, some concerns
-- 60-74: ⭐⭐⭐ Proceed with caution
-- <60: ⭐⭐ High risk
-
-## Integration Points
-
-Works with:
-- **business-fin-analyst** → Financial validation
-- **pitch-deck** → Acquisition proposals
-- **tech-debt-analyzer** → Technical assessment
+```
+90-100: ⭐⭐⭐⭐⭐ Excellent acquisition target
+75-89:  ⭐⭐⭐⭐   Good target, some concerns
+60-74:  ⭐⭐⭐     Proceed with caution
+<60:    ⭐⭐       High risk, investigate further
+```
 
 ## Reference Materials
 
 Load additional context from:
-- `references/validation-frameworks.md` - Complete rubrics
-- `references/industry-benchmarks.md` - Sector metrics
-- `assets/due-diligence-template.md` - Checklist template
+- `references/frameworks.md` - Complete validation frameworks
+- `references/scoring-rubrics.md` - Industry benchmarks
+- `references/due-diligence-checklist.md` - Comprehensive checklists
 
-## Example Output
+## Integration Points
+
+### With Other Skills
+```
+Complete M&A Analysis:
+├─ startup-validator → Validate target
+├─ business-fin-analyst → Analyze financials  
+├─ tech-debt-analyzer → Assess codebase
+└─ pitch-deck → Generate acquisition proposal
+```
+
+## Example Usage
 
 ```
-📊 STARTUP VALIDATION REPORT
+User: "Validate this startup for acquisition:
 Company: DataFlow Analytics
-Overall Score: 82/100 ⭐⭐⭐⭐
+ARR: $2.5M, Growth: 120% YoY
+Team: 15 people, Customers: 150 enterprise"
 
-DIMENSION SCORES
-Market Opportunity:    22/25
-Financial Health:      20/25  
-Strategic Fit:         21/25
-Team & Execution:      19/25
-
-RECOMMENDATION: GOOD ACQUISITION TARGET
-✅ Strong revenue growth (120% YoY)
-✅ Enterprise customer base
-⚠️  Need deeper tech assessment
-
-[Complete analysis follows...]
+Claude: [Generates complete validation report with scoring]
 ```
 
----
+## Credits
 
-**Source:** Enhanced from ailabs-393/ai-labs-claude-skills  
-**License:** MIT  
-**Maintained by:** Organized-AI
+**Enhanced by:** Organized-AI  
+**Original Source:** ailabs-393/ai-labs-claude-skills  
+**License:** MIT

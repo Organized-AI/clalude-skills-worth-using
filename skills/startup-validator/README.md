@@ -1,6 +1,6 @@
 # Startup Validator
 
-> Comprehensive M&A due diligence automation
+Comprehensive startup validation for M&A due diligence.
 
 ## Quick Start
 
@@ -8,53 +8,40 @@
 "Validate this startup for acquisition: [company brief]"
 ```
 
-## What It Does
-
-- ⭐ **4-Dimension Scoring**: Market, Financial, Strategic, Team (100-point scale)
-- 🎯 **Strategic Fit Analysis**: Synergies, customer overlap, compatibility
-- ⚠️ **Risk Assessment**: Red flags, concerns, mitigation strategies
-- ✅ **Due Diligence Checklists**: Complete validation workflows
-- 📊 **Board Recommendations**: Executive-ready reports
-
 ## Features
 
-### Automated Scoring
-Scores companies across 4 dimensions with detailed rationale
+- ⭐ **4-Dimension Scoring** - Market, Financial, Strategic, Team (100-point scale)
+- 🎯 **Strategic Fit Analysis** - Synergy identification and compatibility assessment
+- ⚠️ **Risk Assessment** - Red flag detection with mitigation strategies
+- ✅ **Due Diligence Checklists** - Comprehensive validation checklists
+- 📊 **Board Recommendations** - Executive-ready reports and action items
 
-### Strategic Fit
-Analyzes synergies, integration complexity, and cultural alignment
+## Scoring Framework
 
-### Risk Matrix
-Identifies red flags and provides mitigation strategies
-
-### Integration Ready
-Works seamlessly with other M&A skills in the ecosystem
+| Score | Rating | Action |
+|-------|--------|--------|
+| 90-100 | ⭐⭐⭐⭐⭐ Excellent | Move quickly |
+| 75-89 | ⭐⭐⭐⭐ Good | Investigate concerns |
+| 60-74 | ⭐⭐⭐ Caution | Significant DD needed |
+| <60 | ⭐⭐ High Risk | Pass or deep investigation |
 
 ## Example
 
-```
-User: "Validate this SaaS startup:
-- ARR: $2.5M
-- Growth: 120% YoY  
-- Team: 15 people
-- Customers: 150 enterprise"
-
-Claude: [Generates complete validation report with scoring, analysis, and recommendations]
-```
+See [SKILL.md](./SKILL.md) for detailed workflows and examples.
 
 ## Integration
 
-Part of complete M&A workflow:
+Works seamlessly with:
+- **business-fin-analyst** - Financial analysis
+- **pitch-deck** - Acquisition presentations
+- **tech-debt-analyzer** - Technical assessment
 
-```
-startup-validator → business-fin-analyst → pitch-deck
-```
+## Reference Materials
 
-## Documentation
+- [Validation Frameworks](./references/frameworks.md)
+- [Scoring Rubrics](./references/scoring-rubrics.md)
+- [Due Diligence Checklist](./references/due-diligence-checklist.md)
 
-See [SKILL.md](./SKILL.md) for complete documentation.
+## License
 
----
-
-**Maintained by:** Organized-AI  
-**License:** MIT
+MIT - Enhanced from ailabs-393/ai-labs-claude-skills
