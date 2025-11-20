@@ -1,115 +1,78 @@
 ---
 name: startup-validator
-description: M&A-focused startup validation for acquisition due diligence. Scores companies against acquisition rubrics (Market, Financial, Strategic, Team), identifies synergies, assesses integration risks, and generates board-ready recommendations.
+description: Comprehensive startup validation for M&A due diligence with automated scoring, strategic fit analysis, and board-ready recommendations
+license: MIT
+allowed-tools: [bash, file_create, str_replace, view]
 ---
 
-# Startup Validator (M&A Edition)
+# Startup Validator
 
-Comprehensive acquisition target validation for M&A professionals.
+Comprehensive startup validation system for M&A due diligence. Automatically scores acquisition targets against industry rubrics, identifies strategic fit, assesses risks, and generates executive recommendations.
 
-## Core Workflow
+## Core Capability
 
-### 1. Acquisition Brief Analysis
-Extract key information:
-- Company name and metrics (ARR, growth, team size)
-- Financial health indicators
-- Technology stack
-- Market positioning
-
-### 2. 4-Dimension Validation (100-point scale)
-
-**Market Opportunity (25 points)**
-- TAM >$1B: 10 points
-- Market growth >15% YoY: 8 points
-- Strong positioning: 7 points
-
-**Financial Health (25 points)**
-- Revenue >$1M ARR: 10 points
-- Growth rate >100%: 8 points
-- Unit economics LTV/CAC >3x: 7 points
-
-**Strategic Fit (25 points)**
-- Synergy potential >$5M: 10 points
-- Customer overlap >20%: 8 points
-- Tech compatibility: 7 points
-
-**Team & Execution (25 points)**
-- Founder experience: 10 points
-- Key hire quality: 8 points
-- Retention >90%: 7 points
-
-### 3. Comprehensive Research (10-15 searches)
-
-Execute systematic due diligence:
-- Financial validation (3-4 searches)
-- Market position (3-4 searches)
-- Technology assessment (2-3 searches)
-- Team & culture (2-3 searches)
-- Risk factors (2-3 searches)
-
-### 4. Generate Report
-
-```
-📊 M&A VALIDATION REPORT
-════════════════════════════
-
-Company: [Name]
-Overall Score: [X]/100 ⭐⭐⭐⭐
-
-DIMENSION SCORES
-────────────────
-Market:      [X]/25
-Financial:   [X]/25
-Strategic:   [X]/25
-Team:        [X]/25
-
-RECOMMENDATION: [EXCELLENT/GOOD/CAUTION/PASS]
-
-KEY FINDINGS
-✅ [Strengths]
-⚠️  [Concerns]
-
-STRATEGIC FIT
-• Synergies: $[X]M
-• Customer overlap: [X]%
-• Tech compatibility: [HIGH/MEDIUM/LOW]
-
-RISKS
-🔴 HIGH: [Critical risks]
-⚠️  MEDIUM: [Concerns]
-
-VALUATION
-Range: $[X]-[Y]M
-Multiple: [X]x ARR
-
-NEXT STEPS
-1. [Action]
-2. [Action]
-```
-
-## Integration
-
-Works with:
-- **business-fin-analyst**: Financial deep dive
-- **tech-debt-analyzer**: Technical assessment
-- **pitch-deck**: Acquisition proposal
+**"No Questions Asked" Validation** - Provide company brief → Get complete validation report automatically.
 
 ## Activation
 
-- "Validate [company] for acquisition"
-- "M&A due diligence on [company]"
-- "Score [company] as acquisition target"
+```
+"Validate this startup for acquisition: [company brief]"
+"Score [company] against M&A rubrics"
+"M&A validation for [company name]"
+```
 
-## References
+## Validation Framework
 
-See `references/` directory for:
-- M&A validation frameworks
-- Due diligence checklists
-- Industry benchmarks
-- Research templates
+### 4-Dimension Scoring (100 points total)
+
+1. **Market Opportunity** (25 pts): TAM, growth rate, positioning
+2. **Financial Health** (25 pts): Revenue, margins, unit economics
+3. **Strategic Fit** (25 pts): Synergies, customer overlap, tech compatibility
+4. **Team & Execution** (25 pts): Founders, retention, track record
+
+### Scoring Interpretation
+- 90-100: ⭐⭐⭐⭐⭐ Excellent acquisition target
+- 75-89: ⭐⭐⭐⭐ Good target, some concerns
+- 60-74: ⭐⭐⭐ Proceed with caution
+- <60: ⭐⭐ High risk
+
+## Integration Points
+
+Works with:
+- **business-fin-analyst** → Financial validation
+- **pitch-deck** → Acquisition proposals
+- **tech-debt-analyzer** → Technical assessment
+
+## Reference Materials
+
+Load additional context from:
+- `references/validation-frameworks.md` - Complete rubrics
+- `references/industry-benchmarks.md` - Sector metrics
+- `assets/due-diligence-template.md` - Checklist template
+
+## Example Output
+
+```
+📊 STARTUP VALIDATION REPORT
+Company: DataFlow Analytics
+Overall Score: 82/100 ⭐⭐⭐⭐
+
+DIMENSION SCORES
+Market Opportunity:    22/25
+Financial Health:      20/25  
+Strategic Fit:         21/25
+Team & Execution:      19/25
+
+RECOMMENDATION: GOOD ACQUISITION TARGET
+✅ Strong revenue growth (120% YoY)
+✅ Enterprise customer base
+⚠️  Need deeper tech assessment
+
+[Complete analysis follows...]
+```
 
 ---
 
-**Enhanced by Organized-AI**
-**Based on ailabs-393/ai-labs-claude-skills**
-**License: MIT**
+**Source:** Enhanced from ailabs-393/ai-labs-claude-skills  
+**License:** MIT  
+**Maintained by:** Organized-AI

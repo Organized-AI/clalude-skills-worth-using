@@ -1,74 +1,60 @@
 # Startup Validator
 
-M&A-focused acquisition target validation.
+> Comprehensive M&A due diligence automation
 
 ## Quick Start
 
 ```
-"Validate DataFlow Analytics for acquisition:
-- $2.5M ARR
-- 120% YoY growth
-- 15 employees
-- SaaS analytics platform"
+"Validate this startup for acquisition: [company brief]"
 ```
 
 ## What It Does
 
-- ⭐ Scores across 4 dimensions (100-point scale)
-- 🎯 Identifies synergies and strategic fit
-- ⚠️  Flags risks and red flags
-- 📊 Generates board-ready reports
-- 💰 Provides valuation guidance
+- ⭐ **4-Dimension Scoring**: Market, Financial, Strategic, Team (100-point scale)
+- 🎯 **Strategic Fit Analysis**: Synergies, customer overlap, compatibility
+- ⚠️ **Risk Assessment**: Red flags, concerns, mitigation strategies
+- ✅ **Due Diligence Checklists**: Complete validation workflows
+- 📊 **Board Recommendations**: Executive-ready reports
 
 ## Features
 
-### 4-Dimension Scoring
-1. **Market Opportunity** (25 pts) - TAM, growth, positioning
-2. **Financial Health** (25 pts) - Revenue, margins, unit economics
-3. **Strategic Fit** (25 pts) - Synergies, compatibility
-4. **Team & Execution** (25 pts) - Founders, retention, experience
+### Automated Scoring
+Scores companies across 4 dimensions with detailed rationale
 
-### Comprehensive Research
-- 10-15 web searches minimum
-- Financial validation
-- Market analysis
-- Technology assessment
-- Risk identification
+### Strategic Fit
+Analyzes synergies, integration complexity, and cultural alignment
 
-### Professional Output
-- Executive summary
-- Dimension scores with rationale
-- Strategic fit analysis
-- Risk assessment
-- Valuation range
-- Actionable next steps
+### Risk Matrix
+Identifies red flags and provides mitigation strategies
+
+### Integration Ready
+Works seamlessly with other M&A skills in the ecosystem
+
+## Example
+
+```
+User: "Validate this SaaS startup:
+- ARR: $2.5M
+- Growth: 120% YoY  
+- Team: 15 people
+- Customers: 150 enterprise"
+
+Claude: [Generates complete validation report with scoring, analysis, and recommendations]
+```
 
 ## Integration
 
-Works seamlessly with:
-- `business-fin-analyst` - Financial deep dive
-- `tech-debt-analyzer` - Technical assessment
-- `pitch-deck` - Acquisition presentations
-
-## Example Workflow
+Part of complete M&A workflow:
 
 ```
-startup-validator
-    ↓ Score: 82/100 (GOOD TARGET)
-business-fin-analyst
-    ↓ Valuation: $20-25M
-tech-debt-analyzer
-    ↓ Tech health: 75/100
-pitch-deck
-    ↓ Board presentation ready
+startup-validator → business-fin-analyst → pitch-deck
 ```
 
 ## Documentation
 
-- [SKILL.md](./SKILL.md) - Complete skill definition
-- [references/](./references/) - Frameworks and templates
-- [examples/](./examples/) - Sample validations
+See [SKILL.md](./SKILL.md) for complete documentation.
 
-## License
+---
 
-MIT
+**Maintained by:** Organized-AI  
+**License:** MIT
