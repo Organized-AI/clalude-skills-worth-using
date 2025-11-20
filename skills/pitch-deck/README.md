@@ -1,80 +1,66 @@
 # Pitch Deck Generator
 
-Professional presentation generation for M&A, fundraising, and executive updates.
+> Professional presentation generation for M&A and fundraising
 
 ## Quick Start
 
 ```
-"Generate M&A acquisition deck for DataFlow Analytics:
-- Validation score: 82/100
-- Valuation: $20-25M
-- Strategic fit: High
-- Key synergies: $8M"
+"Generate M&A acquisition deck for [company]"
 ```
+
+## What It Does
+
+- 📊 **M&A Acquisition Decks**: Board-ready acquisition proposals
+- 🚀 **Fundraising Decks**: Investor pitch presentations
+- 💼 **Executive Summaries**: Quick overview presentations
+- 💰 **Auto-Population**: Pulls data from financial analysis
+- 🎨 **Professional Design**: Follows best practices
 
 ## Features
 
-- 🎯 **3 Deck Types**: M&A, Fundraising, Executive Summary
-- 📈 **Auto-Population**: Pulls from validation and financial analysis
-- 🎨 **Professional Design**: Industry-standard templates
-- 📊 **Data Visualization**: Chart suggestions for each slide
-- 🗣️ **Speaker Notes**: Talking points included
+### Multiple Templates
+- M&A acquisition (12-15 slides)
+- Startup fundraising (10-12 slides)
+- Executive summary (5-7 slides)
 
-## Deck Types
+### Auto-Population
+Automatically integrates data from:
+- startup-validator (scores, fit analysis)
+- business-fin-analyst (financials, projections)
+- tech-debt-analyzer (technical assessment)
 
-### M&A Acquisition (12-15 slides)
-Complete acquisition proposal with:
-- Strategic rationale
+### Professional Quality
+- Board-ready formatting
+- Industry-standard layouts
+- Clear data visualization
+- Compelling narrative flow
+
+## Example
+
+```
+User: "Create acquisition presentation for DataFlow Analytics with $25M valuation"
+
+Claude: [Generates complete deck with:
+- Executive summary
 - Financial analysis
-- Synergy identification
-- Integration plan
-- Risk assessment
-
-### Startup Fundraising (10-12 slides)
-Investor pitch with:
-- Problem/solution
-- Market opportunity
-- Traction metrics
-- Business model
-- Team backgrounds
-
-### Executive Summary (5-7 slides)
-Quick overview with:
-- Key highlights
-- Financial snapshot
-- Strategic priorities
-- Recommendations
+- Strategic rationale
+- Synergy breakdown
+- Integration timeline
+- Board recommendation]
+```
 
 ## Integration
 
-Works with:
-- **startup-validator**: Auto-populate from validation
-- **business-fin-analyst**: Financial data and charts
-- **tech-debt-analyzer**: Technical assessment
-
-## Example Output
-
-Each slide includes:
-- ✅ Title and key message
-- ✅ Bullet points (max 6)
-- ✅ Key metrics highlighted
-- ✅ Chart/visual suggestion
-- ✅ Speaker notes
-
-## Best Practices
-
-1. **One message per slide**
-2. **Data over words** (show, don't tell)
-3. **Visual focus** (charts preferred)
-4. **Concise bullets** (7 words max)
-5. **Clear narrative** (story flow)
+Complete M&A workflow:
+```
+startup-validator → business-fin-analyst → pitch-deck
+```
 
 ## Documentation
 
-- [SKILL.md](./SKILL.md) - Complete skill definition
-- [references/](./references/) - Templates and guidelines
-- [examples/](./examples/) - Sample decks
+See [SKILL.md](./SKILL.md) for complete documentation.
 
-## License
+---
 
-MIT
+**Maintained by:** Organized-AI  
+**License:** MIT
