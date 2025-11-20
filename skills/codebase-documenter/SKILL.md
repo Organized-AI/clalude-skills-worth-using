@@ -1,0 +1,1 @@
+$(cat /tmp/ailabs-skills/dist/skills/codebase-documenter/SKILL.md)
